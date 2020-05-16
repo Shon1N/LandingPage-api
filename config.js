@@ -1,15 +1,19 @@
-const express = require("express");
-const app = express();
-const port = 3000;
 
-const server = app.listen(port, function(error){
-    if(error){
-        console.log('Something went wrong', error);
-    }else{
-        console.log('Server is listening on port', port)
-    }
-})
+const server = {
+    port: 3000
+  };
 
-export{
+
+  const urls = {
+    homeRoot: "http://localhost:3000",
+  }
+
+let connectionStrings = {
+      data : "mongodb://129.232.166.154:27017/aul_campaign"
+  };
+
+  export{
+    connectionStrings,
+    urls,
     server,        
 }
