@@ -1,4 +1,3 @@
-import joi from 'dataConnector'
 import mongoose from 'dataConnector'
 
 const dataModelSchema = new mongoose.Schema({
@@ -11,9 +10,9 @@ const dataModelSchema = new mongoose.Schema({
 });
 
 //Replace Genre(as well as dataModel) with the name of the file
-const DataModel = mongoose.model('DataModel', genreSchema);
+const DataModel = mongoose.model('table', genreSchema);
 
-function validateDataModel(dataModel) {
+function validate(dataModel) {
   const schema = {
     name: Joi.string().min(3).required()
   };
@@ -21,7 +20,8 @@ function validateDataModel(dataModel) {
   return Joi.validate(dataModel, schema);
 }
 
-export{
+
+module.exports = {
   DataModel,
   validate,
   dataModelSchema

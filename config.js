@@ -3,17 +3,16 @@ const server = {
     port: 3000
   };
 
-
   const urls = {
     homeRoot: "http://localhost:3000",
   }
 
 let connectionStrings = {
-      data : "mongodb://129.232.166.154:27017/aul_campaign"
+      data : "mongodb://localhost:27017/LandingPage"
   };
 
-  export{
-    connectionStrings,
-    urls,
-    server,        
-}
+  module.exports = {
+    server: server,
+    connectionStrings: connectionStrings,
+    urls: urls,
+};

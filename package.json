@@ -3,6 +3,8 @@
   "lockfileVersion": 1,
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.9.16",
+    "next": "^9.4.4",
     "npm-install-missing": "^0.1.4"
   },
   "name": "LandingPage-api",
@@ -10,7 +12,7 @@
   "main": "config.js",
   "devDependencies": {},
   "scripts": {
-    "start": "./node_modules/nodemon/bin/nodemon.js -- ./node_modules/babel-cli/bin/babel-node.js ./server/server.js",
+    "start": "./node_modules/nodemon/bin/nodemon.js -- ./node_modules/babel-cli/bin/babel-node.js ./server/server.js"
   },
   "repository": {
     "type": "git",
