@@ -4,7 +4,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.9.16",
-    "next": "^9.4.4",
+    "next": "^13.0.3",
     "npm-install-missing": "^0.1.4"
   },
   "name": "LandingPage-api",
